@@ -23,13 +23,13 @@ public class BDConnectMySQL {
 		return null;
 	}
 
-	/*
-	 * public static void main(String[] args) {
-	 * 
-	 * try { new BDConnectMySQL();
-	 * System.out.println(BDConnectMySQL.getDatabaseConnection()); } catch
-	 * (Exception e) { e.printStackTrace(); } }
-	 */
+	
+	  public static void main(String[] args) {
+	  
+	  try { new BDConnectMySQL();
+	  System.out.println(BDConnectMySQL.getDatabaseConnection()); } catch
+	  (Exception e) { e.printStackTrace(); } }
+	 
 
 
 

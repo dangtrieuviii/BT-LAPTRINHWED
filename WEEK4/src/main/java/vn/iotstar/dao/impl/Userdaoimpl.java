@@ -87,7 +87,7 @@ public class Userdaoimpl extends BDConnectMySQL implements IUserdao {
 		String sql = "INSERT INTO users(id, username, password, images, fullname, email, phone, roleid, createDate	) VALUES (?, ?, ?, ?, ?)";
 
 		try {
-			// conn = new DBConnectSQL().getConnection(); //kết nối database
+		   // conn = new BDConnectMySQL().getDatabaseConnection(); //kết nối database
 			ps = conn.prepareStatement(sql);// ném câu sql vào cho thực thi
 
 			ps.setInt(1, user.getId());
