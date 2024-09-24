@@ -42,7 +42,7 @@
                
     </c:when>
     <c:otherwise>
-        <a href="${pageContext.request.contextPath }/member/myaccount">${sessionScope.account.fullname}</a> 
+        <a href="/ltwedct5/multiPartServlet">${sessionScope.account.fullname}</a> 
  | <a href="${pageContext.request.contextPath }/Logout">Logout</a>
                 
     </c:otherwise>
