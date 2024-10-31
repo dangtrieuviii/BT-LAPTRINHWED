@@ -16,6 +16,7 @@ import vn.iotstar.repository.CategoryRepository;
 @Service
 public class CategoryServiceImpl implements CategoryService {
 	@Autowired
+	static
 	CategoryRepository categoryRepository;
 
 	@Override
@@ -88,7 +89,6 @@ public class CategoryServiceImpl implements CategoryService {
 		return categoryRepository.findAll(pageable);
 	}
 
-	@Override
 	public List<Category> findAll() {
 		return categoryRepository.findAll();
 	}
@@ -106,6 +106,12 @@ public class CategoryServiceImpl implements CategoryService {
 	@Override
 	public void deleteById(Long id) {
 		categoryRepository.deleteById(id);
+	}
+
+	@Override
+	public <S extends Category> S save(vn.iotstar.entity.Category entity) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 

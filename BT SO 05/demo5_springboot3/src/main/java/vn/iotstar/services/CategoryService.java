@@ -18,16 +18,21 @@ public interface CategoryService {
 
 	Optional<Category> findById(Long id);
 
-	List<Category> findAll();
+	static List<Category> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 	Page<Category> findAll(Pageable pageable);
 
 	List<Category> findAll(Sort sort);
 
-	<S extends Category> S save(S entity);
+	<S extends Category> S save(vn.iotstar.entity.Category entity);
 
 	void setCategoryRepository(CategoryRepository categoryRepository);
 
 	CategoryRepository getCategoryRepository();
+
+	<S extends Category> S save(S entity);
 
 }
